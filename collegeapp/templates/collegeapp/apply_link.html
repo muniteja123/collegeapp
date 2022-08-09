@@ -1,0 +1,10 @@
+<form method='post' enctype="multipart/form-data">
+    {% csrf_token %}
+
+    Name : <input type="text" name="name"><br>
+    Email: <input type="email" name="email"><br>
+    Marks : <input type="number" name="process"><br>
+    Intermediate: <input type="tel" name="intermediate"><br>
+    <a href="{% url 'collegeapp:applied_list' %}"><input type="submit" value="Apply"></a><br>
+
+</form>

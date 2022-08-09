@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% if Apply.marks > 75 %}
+    Name : {{ context.name }} <br>
+    email : {{ context.email }}<br>
+    password : {{ context.password }}<br>
+    department : {{ context.department }}<br>
+    fname : {{ context.fname }}<br>
+    nationality : {{ context.nationality }}<br>
+{%else%}
+message: "Not eligible"
+{% endif %}
+
+<a href="{% url 'collegeapp:applied_list' %}"><input type="submit" value="Register"></a><br>
+
+
+
+</body>
+</html>
